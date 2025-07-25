@@ -2,39 +2,29 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    box-sizing: border-box;
 }
 
 .container {
     display: grid;
-    gap: 1px;
+    gap: 2px;
     grid-template-columns: repeat(6, 60px);
     grid-template-rows: repeat(6, 60px);
     grid-template-areas:
-        "A1 A1 A6 A6 A6 A14"
-        "A1 A1 A6 A6 A6 A15"
-        "A2 A A6 A6 A6 A15"
-        "A3 A3 A7 A8 A9 A16"
-        "A3 A3 A10 A11 A11 A17"
-        "A4 A5 A12 A11 A11 A17";
+        "A1 A1 A7 A7 A7 A14"
+        "A1 A1 A7 A7 A7 A15"
+        "A2 A3 A7 A7 A7 A16"
+        "A4 A4 A8 A11 A12 A17"
+        "A4 A4 A9 A13 A13 A18"
+        "A5 A6 A10 A13 A13 A19";
+
 }
 
-/* 正確圖片樣式 */
 .item {
     background-color: #f0d1d1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
 }
 
-.item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-/* grid-area 對應設定 */
 .item1 {
     grid-area: A1;
 }
@@ -105,4 +95,8 @@
 
 .item18 {
     grid-area: A18;
+}
+
+.item19 {
+    grid-area: A19;
 }
